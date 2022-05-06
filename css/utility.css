@@ -1,0 +1,11 @@
+/* button */
+.btn {
+  border-radius: 5px;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--tertiary-color);
+  color: #fff;
+}
+/* card */

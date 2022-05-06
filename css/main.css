@@ -1,0 +1,75 @@
+body {
+  background-color: var(--primary-color);
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+  margin: -115px 0 0;
+  padding: 150px 250px 0;
+  text-align: center;
+  color: var(--primary-color);
+  height: 84.8vh;
+  position: relative;
+  z-index: -2;
+}
+
+.jumbotron::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background-image: linear-gradient(to top, var(--primary-color), rgba(0,0,0,0));
+  z-index: -1;
+}
+
+.jumbotron h1 {
+  font-size: var(--font57px);
+  padding: 0 120px;
+  text-shadow: var(--ambient-shadow);
+}
+
+.jumbotron p {
+  font-size: var(--font18px);
+  padding: 0 170px;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  text-shadow: var(--ambient-shadow);
+}
+
+.tripCTA {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--ambient-shadow);
+}
+
+.tripCTA form {
+  display: grid;
+  grid-template-areas: 
+    'fromL toL dateL button1'
+    'fromI toI dateI button2'
+  ;
+  gap: 5px;
+  text-align: left;
+  padding: 20px 32px;
+  font-size: var(--font18px);
+}
+
+.tripCTA input {
+  margin-right: 15px;
+  height: 30px;
+  box-shadow: var(--penumbra-shadow);
+  border-radius: 3px;
+  border: 1px solid var(--primary-color);
+  padding-left: 5px;
+}
+
+.tripCTA .btn {
+  grid-area: button2;
+  border-radius: 3px;
+  font-size: var(--font14px);
+}

@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #082032;
+  --on-primary-color: #FFF;
+  --secondary-color: #334756;
+  --on-secondary-color: #FFF;
+  --tertiary-color: #FF4C29;
+  --on-tertiary-color: #FFF;
+  --umbra-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14);
+  --penumbra-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+  --ambient-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+
+  --font12px: 0.75rem;
+  --font14px: 0.875rem;
+  --font18px: 1.125rem;
+  --font20px: 1.25rem;
+  --font24px: 1.5rem;
+  --font28px: 1.75rem;
+  --font45px: 2.8125rem;
+  --font57px: 3.5625rem;
+  --font64px: 4rem;
+  --font72px: 4.5rem;
+  
+
+  --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+

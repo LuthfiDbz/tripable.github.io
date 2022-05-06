@@ -1,0 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol,ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
