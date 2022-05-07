@@ -1,6 +1,7 @@
 body {
   background-color: var(--primary-color);
   color: #fff;
+  z-index: -9999;
 }
 
 /* Jumbotron */
@@ -84,6 +85,7 @@ body {
   border-radius: 3px;
   font-size: var(--font14px);
   font-weight: 600;
+  padding: 0;
 }
 
 /* Services */
@@ -111,4 +113,63 @@ body {
 
 .services-card:last-child img {
   margin-bottom: 5px;
+}
+
+/* Destination */
+.destination {
+  margin: auto;
+  padding: 0 120px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.destination-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  text-align: left;
+  margin-top: -15px;
+}
+
+.destination-card:nth-child(1) {
+  background-image: url(../img/borobudur.jpg);
+  background-size: cover;
+}
+
+.destination-card:nth-child(2) {
+  background-image: url(../img/tokyo.jpg);
+  background-size: cover;
+}
+
+.destination-card:nth-child(3) {
+  background-image: url(../img/canyon.jpg);
+  background-size: cover;
+}
+
+.destination-card:nth-child(4) {
+  background-image: url(../img/maldives.jpg);
+  background-size: cover;
+}
+
+.destination button {
+  padding: 8px 32px;
+  font-size: var(--font16px);
+  margin: 30px 0;
+}
+
+/* Gallery */
+.gallery {
+  padding: 0 120px;
+}
+
+.gallery-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.gallery-content img {
+  width: 22.65rem;
+  height: 400px;
 }
