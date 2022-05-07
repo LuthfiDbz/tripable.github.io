@@ -1,3 +1,25 @@
+.active {
+  border-bottom: 2px solid var(--tertiary-color);
+}
+
+.title {
+  font-weight: 500;
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  font-size: var(--font28px);
+  margin-bottom: 57px;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  border-bottom: 3px solid var(--tertiary-color);
+  width: 70%;
+  margin: auto;
+  padding-bottom: 3px;
+}
+
 /* button */
 .btn {
   border-radius: 5px;
@@ -8,4 +30,26 @@
   background-color: var(--tertiary-color);
   color: #fff;
 }
+
+.btn-primary:hover {
+  background-color: #cc3d20;
+  cursor: pointer;
+}
+
 /* card */
+.services-card img {
+  width: 32%;
+}
+
+.services-card h5 {
+  font-size: var(--font20px);
+  color: var(--tertiary-color);
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.services-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: -35px;
+}

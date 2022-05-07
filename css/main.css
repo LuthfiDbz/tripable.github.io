@@ -1,5 +1,6 @@
 body {
   background-color: var(--primary-color);
+  color: #fff;
 }
 
 /* Jumbotron */
@@ -7,12 +8,16 @@ body {
   background-image: url(../img/jumbotron.jpg);
   background-size: cover;
   margin: -115px 0 0;
-  padding: 150px 250px 0;
+  padding: 140px 250px 0;
   text-align: center;
   color: var(--primary-color);
   height: 84.8vh;
   position: relative;
-  z-index: -2;
+}
+
+.jumbotron-container {
+  position: relative;
+  z-index: 1;
 }
 
 .jumbotron::after {
@@ -24,21 +29,23 @@ body {
   bottom: 0px;
   left: 0;
   background-image: linear-gradient(to top, var(--primary-color), rgba(0,0,0,0));
-  z-index: -1;
 }
 
 .jumbotron h1 {
   font-size: var(--font57px);
   padding: 0 120px;
   text-shadow: var(--ambient-shadow);
+  font-weight: 600;
+  line-height: 70px;
 }
 
 .jumbotron p {
   font-size: var(--font18px);
-  padding: 0 170px;
-  margin-top: -20px;
-  margin-bottom: 50px;
+  padding: 0 120px;
+  margin-top: -30px;
+  margin-bottom: 60px;
   text-shadow: var(--ambient-shadow);
+  font-weight: 600;
 }
 
 .tripCTA {
@@ -59,17 +66,49 @@ body {
   font-size: var(--font18px);
 }
 
+.tripCTA label {
+  font-weight: 500;
+}
+
 .tripCTA input {
   margin-right: 15px;
   height: 30px;
   box-shadow: var(--penumbra-shadow);
   border-radius: 3px;
   border: 1px solid var(--primary-color);
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .tripCTA .btn {
   grid-area: button2;
   border-radius: 3px;
   font-size: var(--font14px);
+  font-weight: 600;
+}
+
+/* Services */
+.services {
+  text-align: center;
+  margin-top: 80px;
+  padding: 0 120px;
+  margin-bottom: 100px;
+}
+
+.services-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.services-card:first-child img {
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
+.services-card:nth-child(3) img {
+  margin-bottom: 4px;
+}
+
+.services-card:last-child img {
+  margin-bottom: 5px;
 }

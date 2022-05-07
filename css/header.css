@@ -3,6 +3,8 @@
   justify-content: space-between;
   padding: 8px 120px;
   color: var(--primary-color);
+  position: relative;
+  z-index: 2;
 }
 
 .logo {
@@ -15,6 +17,14 @@
 }
 
 .menu-bar li {
-  font-size: var(--font18px);
+  font-size: 1rem;
   margin: 0 1rem;
+}
+
+.menu-bar a {
+  color: var(--primary-color);
+}
+
+.menu-bar a:hover {
+  color: var(--secondary-color);
 }

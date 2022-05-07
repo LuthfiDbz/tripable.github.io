@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/utility.css">
   <link rel="stylesheet" href="css/variables.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
   <title>Tripable</title>
 </head>
 <body>
@@ -19,13 +22,13 @@
     <div class="logo">Logo</div>
     <nav class="menu">
       <ul class="menu-bar">
-        <li>Home</li>
-        <li>Services</li>
-        <li>Places</li>
-        <li>Gallery</li>
-        <li>Packages</li>
-        <li>Blog</li>
-        <li>Contact</li>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Places</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -33,49 +36,65 @@
 
   <!-- Jumbotron -->
   <div class="jumbotron">
-    <h1>Let's Make Your Best Trip Ever</h1>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio reiciendis repellat qui!</p>
-    <div class="tripCTA">
-      <form>
-        <label for="from">From</label>
-        <label for="to">To</label>
-        <label for="date">Date</label>
-        <div></div>
-        <input type="text" name="from" placeholder="Jakarta">
-        <input type="text" name="to" placeholder="Tokyo">
-        <input type="date" name="date" placeholder="Date">
-        <button class="btn btn-primary">Search</button>
-      </form>
+    <div class="jumbotron-container">
+      <h1>Let's Make Your Best Trip Ever</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio reiciendis repellat qui!</p>
+      <div class="tripCTA">
+        <form>
+          <label for="from">From</label>
+          <label for="to">To</label>
+          <label for="date">Date</label>
+          <div></div>
+          <input type="text" name="from" placeholder="Jakarta">
+          <input type="text" name="to" placeholder="Tokyo">
+          <input type="date" name="date" placeholder="Date">
+          <button class="btn btn-primary">Search</button>
+        </form>
+      </div>
     </div>
   </div>
   <!-- End Jumbotron -->
 
   <!-- Services -->
   <section class="services">
-    <h3>Our Services</h3>
+    <h3 class="title">Our Services</h3>
     <div class="services-content">
       <div class="services-card">
-        <img src="" alt="">
+        <img src="icon/bed.svg" alt="">
         <h5>Title</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, repellat?</p>
+        <p>Supporting or descriptive text for the card goes here.</p>
       </div>
       <div class="services-card">
-        <img src="" alt="">
+        <img src="icon/tour.svg" alt="">
         <h5>Title</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, repellat?</p>
+        <p>Supporting or descriptive text for the card goes here.</p>
       </div>
       <div class="services-card">
-        <img src="" alt="">
+        <img src="icon/transport.svg" alt="">
         <h5>Title</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, repellat?</p>
+        <p>Supporting or descriptive text for the card goes here.</p>
       </div>
       <div class="services-card">
-        <img src="" alt="">
+        <img src="icon/plane.svg" alt="">
         <h5>Title</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, repellat?</p>
+        <p>Supporting or descriptive text for the card goes here.</p>
       </div>
     </div>
   </section>
   <!-- End Services -->
+
+  <!-- Destination -->
+  <section class="destination">
+    <h3 class="title">Top Destination</h3>
+    <div class="destination-card">
+      <h5>Borobudur Temple</h5>
+      <div class="location">
+        <img src="" alt="">
+        <p>Yogyakarta, Indonesia</p>
+      </div>
+    </div>
+    <button class="btn btn-primary">More Destination</button>
+  </section>
+  <!-- End Destination -->
 </body>
 </html>
