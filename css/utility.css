@@ -75,7 +75,7 @@
   content: '';
   display: block;
   width: 100%;
-  height: 50%;
+  height: 60%;
   position: absolute;
   bottom: 0; 
   left: 0;
@@ -90,15 +90,16 @@
 }
 
 .destination-card img {
-  width: 16px;
   float: left;
-  background-color: #fff;
+  margin-bottom: 5px;
 }
 
 .destination-card p {
   font-size: var(--font14px);
-  margin-top: 0px;
+  margin-top: -25px;
   margin-bottom: 0;
+  margin-left: 18px;
+  font-weight: 400;
 }
 
 .offer-card {
@@ -139,4 +140,70 @@
   margin-top: -5px;
   padding: 8px 40px;
   font-weight: 500;
+}
+
+.blog-card {
+  background-size: cover;
+  border-radius: 3px;
+  padding: 100px 10px 10px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+
+.blog-card::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 80%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  z-index: -1;
+}
+
+.blog-card h5 {
+  font-size: var(--font12px);
+  font-weight: 400;
+}
+
+.blog-card p {
+  font-size: var(--font10px);
+  font-weight: 400;
+  margin-top: -10px;
+  margin-bottom: 0;
+}
+
+.blog-1 {
+  grid-area: blog1;
+  background-image: url(../img/blog1.jpg);
+  padding: 250px 15px 15px;
+  width: 40vw;
+}
+
+.blog-card.blog-1 h5 {
+  font-size: var(--font20px);
+}
+
+.blog-card.blog-1 p {
+  font-size: 1rem;
+  margin-top: -20px;
+  margin-bottom: 0;
+}
+
+.blog-2 {
+  background-image: url(../img/blog2.jpg);
+}
+
+.blog-3 {
+  background-image: url(../img/blog3.jpg);
+}
+
+.blog-4 {
+  background-image: url(../img/blog4.jpg);
+}
+
+.blog-5 {
+  background-image: url(../img/blog5.jpg);
 }
