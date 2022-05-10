@@ -161,6 +161,7 @@
   position: absolute;
   background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
   z-index: -1;
+  border-radius: 0 0 3px 3px;
 }
 
 .blog-card h5 {
