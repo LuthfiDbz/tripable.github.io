@@ -8,8 +8,9 @@
 }
 
 .logo {
-  background-color: var(--primary-color);
-  width: 150px;
+  background-image: url(../img/logo.svg);
+  width: 210px;
+  background-size: cover;
 }
 
 .menu-bar {
